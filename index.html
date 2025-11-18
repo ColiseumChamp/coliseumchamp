@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coliseum - CS Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <img src="logo.png" alt="Coliseum Logo" class="logo">
+                    <span class="brand-name">COLISEUM</span>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#rules" class="nav-link">Regras</a></li>
+                    <li><a href="#prizes" class="nav-link">Premiações</a></li>
+                    <li><a href="#stream" class="nav-link">Transmissão</a></li>
+                    <li><a href="#liga-b" class="nav-link">Liga B</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <img src="logo.png" alt="Coliseum Logo">
+                <span>COLISEUM</span>
+            </div>
+            <button class="sidebar-close" id="sidebarClose" aria-label="Fechar Menu">
+                <span>&times;</span>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#home" class="sidebar-link">
+                <span class="sidebar-icon"><i class="fa-solid fa-house"></i></span>
+                <span>Home</span>
+            </a>
+            <a href="#about" class="sidebar-link">
+                <span class="sidebar-icon"><i class="fa-solid fa-circle-info"></i></span>
+                <span>Sobre Nós</span>
+            </a>
+            <a href="#rules" class="sidebar-link">
+                <span class="sidebar-icon"><i class="fa-solid fa-clipboard-list"></i></span>
+                <span>Regras</span>
+            </a>
+            <a href="#prizes" class="sidebar-link">
+                <span class="sidebar-icon"><i class="fa-solid fa-trophy"></i></span>
+                <span>Premiações</span>
+            </a>
+            <a href="#stream" class="sidebar-link">
+                <span class="sidebar-icon"><i class="fa-solid fa-tv"></i></span>
+                <span>Transmissão</span>
+            </a>
+            <a href="#liga-b" class="sidebar-link">
+                <span class="sidebar-icon"><i class="fa-solid fa-trophy"></i></span>
+                <span>Liga B</span>
+            </a>
+            <a href="#contact" class="sidebar-link">
+                <span class="sidebar-icon"><i class="fa-solid fa-envelope"></i></span>
+                <span>Contato</span>
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="sidebar-social">
+                <a href="https://www.instagram.com/coliseum_champ/" target="_blank" class="sidebar-social-link" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.twitch.tv/coliseumchamp" target="_blank" class="sidebar-social-link" title="Twitch">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+            </div>
+            <p class="sidebar-copyright">© 2025 Coliseum</p>
+        </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background" style="background-image: url('hero-bg.jpg')"></div>
+        <div class="hero-overlay"></div>
+        <div class="coliseum-arch"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">COLISEUM</h1>
+            <p class="hero-subtitle">O Maior Campeonato de Counter-Strike</p>
+            <button class="cta-button">Assista Agora</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="coliseum-divider top"></div>
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Bem-vindo ao Coliseum</h3>
+                    <p>O Coliseum é o maior e mais prestigioso campeonato de Counter-Strike do Brasil. Inspirado na grandiosidade do antigo Coliseu Romano, reunimos os melhores jogadores e equipes do país em um único palco de competição.</p>
+                    <p>Nossa missão é promover o esporte eletrônico de forma profissional, oferecendo oportunidades para talentos emergentes e consolidando nomes já estabelecidos na cena competitiva.</p>
+                    <p>Com transmissões ao vivo, prêmios em dinheiro e uma comunidade apaixonada, o Coliseum é o destino obrigatório para fãs de CS:GO e esports em geral.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-text">Jogadores</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-text">Equipes</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-text">Edições</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-text">Patrocinadores</span>
+                    </div>
+                </div>
+            </div>
+            <div class="coliseum-divider bottom"></div>
+        </div>
+    </section>
+
+    <!-- CTA Section - Join Tournament -->
+    <section id="join" class="join-tournament">
+        <div class="container">
+            <div class="join-content">
+                <div class="join-text">
+                    <h2 class="join-title">PRONTO PARA O COMBATE?</h2>
+                    <p class="join-subtitle">Junte-se à elite do Counter-Strike. Inscreva sua equipe no maior campeonato do Brasil e lute pela glória no Coliseum!</p>
+                    <a href="https://wa.me/5564992655410?text=Ol%C3%A1%2C%20gostaria%20de%20inscrever%20minha%20equipe%20no%20pr%C3%B3ximo%20campeonato%20do%20Coliseum." target="_blank" class="join-button">
+                        <i class="fa-brands fa-whatsapp"></i> JOGAR CAMPEONATO
+                    </a>
+                </div>
+                <div class="join-image">
+                    <img src="Designsemnome(15)(1)(1).png" alt="AK-47 Cross" class="ak-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section id="rules" class="rules">
+        <div class="container">
+            <div class="coliseum-divider top"></div>
+            <h2 class="section-title">Regras do Campeonato</h2>
+            <div class="rules-grid">
+
+
+                <div class="rule-card">
+                    <div class="rule-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3>Equipe de 5 Players</h3>
+                    <p>Cada equipe deve ter exatamente 5 jogadores ativos em campo. Máximo de 2 substitutos permitidos por partida. Todos os jogadores devem estar registrados e validados.</p>
+                </div>
+
+                <div class="rule-card">
+                    <div class="rule-icon"><i class="fa-solid fa-gamepad"></i></div>
+                    <h3>Formato de Competição</h3>
+                    <p>MD3 (Melhor de 3) nas eliminatórias. Final em MD5 (Melhor de 5). Cada mapa é jogado em 30 rounds, com times alternando entre Terrorista e Contra-Terrorista.</p>
+                </div>
+
+                <div class="rule-card">
+                    <div class="rule-icon"><i class="fa-solid fa-gear"></i></div>
+                    <h3>Servidores Online 128 Tickrate</h3>
+                    <p>CS:GO versão oficial. Servidores online com 128 tickrate obrigatório. Sem modificações de cliente. Anti-cheat ativo em todas as partidas.</p>
+                </div>
+
+                <div class="rule-card">
+                    <div class="rule-icon"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Horários e Pontualidade</h3>
+                    <p>Check-in 30 minutos antes do jogo. Atrasos maiores que 15 minutos resultam em derrota por WO (Walk Over). Respeitar cronograma é essencial.</p>
+                </div>
+
+                <div class="rule-card">
+                    <div class="rule-icon"><i class="fa-solid fa-ban"></i></div>
+                    <h3>Proibições Rigorosas</h3>
+                    <p>Cheats, exploits, comportamento antidesportivo e assédio são terminantemente proibidos. Punições variam de multa a desqualificação permanente.</p>
+                </div>
+
+                <div class="rule-card">
+                    <div class="rule-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                    <h3>Comunicação Oficial</h3>
+                    <p>Comunicação apenas em português durante as partidas. Respeito mútuo entre times é obrigatório. Qualquer violação será reportada e punida.</p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Prizes Section -->
+    <section id="prizes" class="prizes">
+        <div class="container">
+            <div class="coliseum-divider top"></div>
+            <h2 class="section-title">Premiações</h2>
+            <div class="prizes-content">
+                <div class="prizes-text">
+                    <h3>Lute pela Glória e pelo Reconhecimento</h3>
+                    <p>O Coliseum reconhece o esforço e a dedicação das melhores equipes e jogadores. A premiação é um símbolo da excelência alcançada no cenário competitivo.</p>
+
+                    <div class="prize-details">
+                        <div class="prize-card">
+                            <i class="fa-solid fa-trophy"></i>
+                            <h4>O Troféu de Campeão</h4>
+                            <p>O grande vencedor leva para casa o cobiçado Troféu Coliseum, o símbolo máximo de prestígio e domínio no campeonato.</p>
+                            <p>Mais do que um prêmio, é a marca da sua história no Counter-Strike.</p>
+                        </div>
+                        <div class="prize-card">
+                            <i class="fa-solid fa-star"></i>
+                            <h4>MVP do Torneio</h4>
+                            <p>O jogador mais valioso (MVP) do campeonato será coroado com um prêmio especial e reconhecimento em todas as nossas plataformas.</p>
+                            <p>A performance individual é crucial para a vitória do time, e o MVP representa a excelência em campo.</p>
+                        </div>
+                        <div class="prize-card">
+                            <i class="fa-solid fa-medal"></i>
+                            <h4>Premiação por Colocação</h4>
+                            <p>As equipes mais bem classificadas recebem premiações que variam conforme a edição do torneio, incluindo equipamentos, patrocínios e outros benefícios.</p>
+                            <p>Detalhes específicos são divulgados no regulamento de cada temporada.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="prizes-image">
+                    <img src="pasted_file_4m1wzs_image.png" alt="Troféu Coliseum Champion" class="trophy-image">
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Stream Section -->
+    <section id="stream" class="stream">
+        <div class="container">
+            <div class="coliseum-divider top"></div>
+            <h2 class="section-title">Transmissão Ao Vivo</h2>
+            <div class="stream-content">
+                <div class="twitch-player">
+                    <iframe 
+                        src="https://player.twitch.tv/?channel=coliseumchamp&parent=8080-i3m5ju9kvmpmda58xemel-0cbd1fb5.manus.computer&parent=localhost" 
+                        height="720" 
+                        width="100%" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="stream-info">
+                    <h3>Acompanhe as Transmissões</h3>
+                    <p>Assista ao vivo todos os jogos do Coliseum direto do nosso canal na Twitch. Cobertura completa com comentários, análises e interação com a comunidade.</p>
+                    <a href="https://www.twitch.tv/coliseumchamp" target="_blank" class="stream-button">Ir para Twitch</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Liga B Section -->
+    <section id="liga-b" class="liga-b">
+        <div class="container">
+            <div class="coliseum-divider top"></div>
+            <h2 class="section-title">Coliseum Liga B</h2>
+            <div class="liga-b-content">
+                <div class="liga-b-image">
+                    <img src="LIGA B (1) (1).png" alt="Coliseum Liga B Logo" class="liga-b-logo">
+                </div>
+                <div class="liga-b-text">
+                    <h3>Sua Chance de Brilhar</h3>
+                    <p>A <strong>Coliseum Liga B</strong> é a porta de entrada para o cenário competitivo, criada especialmente para equipes que buscam experiência e não tiveram a oportunidade de participar do campeonato principal.</p>
+                    <p>É o ambiente perfeito para desenvolver suas habilidades, enfrentar adversários de nível similar e construir seu caminho rumo à elite do Counter-Strike.</p>
+                    <h4>Requisitos de Participação</h4>
+                    <ul>
+                        <li><strong>Exclusividade:</strong> Para equipes que não participaram da última edição do Campeonato Principal.</li>
+                        <li><strong>Nível de Habilidade:</strong> Nível máximo de GC (Gamers Club) de <strong>15</strong>. Garantimos um campo de jogo mais equilibrado.</li>
+                        <li><strong>Formato:</strong> Formato MD3 (Melhor de 3) nas eliminatórias, MD5 (Melhor de 5) na Grande Final, com premiação e destaque nas nossas redes sociais.</li>
+                    </ul>
+                    <a href="https://wa.me/5564992655410?text=Ol%C3%A1%2C%20gostaria%20de%20inscrever%20minha%20equipe%20na%20Liga%20B%20do%20Coliseum." target="_blank" class="liga-b-button">
+                        <i class="fa-brands fa-whatsapp"></i> INSCREVA-SE NA LIGA B
+                    </a>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="coliseum-divider top"></div>
+            <h2 class="section-title">Canais de Contato</h2>
+            <div class="contact-content new-contact-layout">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p>Entre em contato conosco através dos canais abaixo. Nossa equipe está pronta para responder suas dúvidas sobre inscrições, regras e transmissão.</p>
+                    
+                    <div class="contact-card-details">
+                       <!--<p><i class="fa-solid fa-envelope contact-icon"></i> <strong>Email:</strong> <a href="mailto:contato@coliseum.com" class="contact-link">contato@coliseum.com</a></p>--> 
+                        <p><i class="fa-solid fa-phone contact-icon"></i> <strong>Telefone:</strong> +55 (64) 99265-5410</p>
+                        <p><i class="fa-solid fa-location-dot contact-icon"></i> <strong>Endereço:</strong> Itumbiara, GO - Brasil</p>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="https://wa.me/5564992655410?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20o%20Coliseum." target="_blank" class="action-button whatsapp-button">
+                            <i class="fa-brands fa-whatsapp"></i> Fale por WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-social-section">
+                    <h3>Siga-nos nas Redes</h3>
+                    <p>Acompanhe todas as novidades, resultados e transmissões ao vivo do Coliseum.</p>
+                    <div class="social-links-large">
+                        <a href="https://www.instagram.com/coliseum_champ/" target="_blank" class="social-link-large instagram-link">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://www.twitch.tv/coliseumchamp" target="_blank" class="social-link-large twitch-link">
+                            <i class="fa-brands fa-twitch"></i> Twitch
+                        </a>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Coliseum</h4>
+                    <p>O maior campeonato de Counter-Strike do Brasil, inspirado na grandiosidade do Coliseu Romano.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/coliseum_champ/" target="_blank" class="footer-social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitch.tv/coliseumchamp" target="_blank" class="footer-social-link" title="Twitch"><i class="fa-brands fa-twitch"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#rules">Regras</a></li>
+                        <li><a href="#stream">Transmissão</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <!--<li><strong>Email:</strong> /li>--> 
+                        <li><strong>Telefone:</strong> +55 (64) 99265-5410</li>
+                        <li><strong>Endereço:</strong> Itumbiara, GO</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Horários de Atendimentos</h4>
+                    <ul class="footer-hours">
+                        <li>Segunda - Sexta: 13h - 23h</li>
+                        <li>Sábado: 14h - 22h</li>
+                        <li>Domingo: 14h - 22h</li>
+                       <!-- <li class="highlight">Transmissões 24/7</li>-->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Coliseum - CS Tournament. Todos os direitos reservados.</p>
+                    <div class="footer-creator-link">
+                        <a href="https://www.instagram.com/luanhenry2004/" target="_blank" class="creator-instagram-link" title="Instagram do Criador">
+                            <i class="fa-brands fa-instagram"></i> Criado por Luan Henry
+                        </a>
+                    </div>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacidade</a>
+                        <span>•</span>
+                        <a href="#">Termos de Uso</a>
+                        <span>•</span>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

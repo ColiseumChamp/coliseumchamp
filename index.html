@@ -413,11 +413,13 @@
         window.addEventListener('DOMContentLoaded', (event) => {
             if (typeof Twitch !== 'undefined' && document.getElementById('twitch-embed')) {
                 new Twitch.Embed("twitch-embed", {
-                    width: "100%",
-                    height: 750,
-                    channel: TWITCH_CHANNEL,
-                    parent: PARENT_DOMAINS
-                });
+    width: "100%",
+    height: 720,
+    channel: TWITCH_CHANNEL,
+    parent: PARENT_DOMAINS,
+    layout: "video" // <--- Esta linha remove o chat
+});
+
             }
         });
     </script>
